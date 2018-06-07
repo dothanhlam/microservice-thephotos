@@ -19,8 +19,8 @@ TRANSPORTER=nats://localhost:4222
 ### To get the Node server running locally with Docker
 - Clone this repo
 - Start with docker-compose: `docker compose up -d`. It starts all services in separated containers, a NATS server for communication, a MongoDB server for database and a [Traefik](https://traefik.io/) reverse proxy
-- Open the http://localhost:3000/api or docker-ip:3000/api
+- Open the http://localhost:3000/api or http://docker-ip:3000/api
 
 ### Scale up services
 Run this command
-	`docker-compose scale api=3 articles=2 users=2 comments=2 follows=2 favorites=2`
+	`docker-compose scale api=3`
